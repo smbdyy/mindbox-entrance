@@ -12,6 +12,6 @@ public class IncorrectArgumentException : ShapesException
 
     public static IncorrectArgumentException TriangleInequality(double a, double b, double c)
     {
-        return new IncorrectArgumentException($"triangle inequality is not satisfied: {a} + {b} >= {c}");
+        return new IncorrectArgumentException($"triangle inequality is not satisfied: {a} + {b} <= {c}");
     }
 }

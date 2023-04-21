@@ -39,7 +39,7 @@ public class Triangle : ShapeBase
     {
         double[] sides = { SideA, SideB, SideC };
         Array.Sort(sides);
-        if (sides[0] + sides[1] >= sides[2])
+        if (sides[0] + sides[1] <= sides[2])
         {
             throw IncorrectArgumentException.TriangleInequality(SideA, SideB, SideC);
         }
