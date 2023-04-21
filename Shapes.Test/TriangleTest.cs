@@ -11,7 +11,7 @@ public class TriangleTest
     [InlineData(1, 1, 2)]
     [InlineData(3.01, 4.095, 7.2)]
     [InlineData(7, 1, 1)]
-    public void ShouldThrowIfTriangleInequalityViolated(float sideA, float sideB, float sideC)
+    public void ShouldThrowIfTriangleInequalityViolated(double sideA, double sideB, double sideC)
     {
         Assert.Throws<IncorrectArgumentException>(() => new Triangle(sideA, sideB, sideC));
     }
@@ -20,7 +20,7 @@ public class TriangleTest
     [InlineData(0, 1, 2)]
     [InlineData(1, -2, 3)]
     [InlineData(1, 2, -3)]
-    public void ShouldThrowIfLengthIsNotPositive(float sideA, float sideB, float sideC)
+    public void ShouldThrowIfLengthIsNotPositive(double sideA, double sideB, double sideC)
     {
         Assert.Throws<IncorrectArgumentException>(() => new Triangle(sideA, sideB, sideC));
     }
