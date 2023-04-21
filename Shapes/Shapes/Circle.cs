@@ -1,6 +1,6 @@
 ﻿namespace Shapes.Shapes;
 
-public class Circle : ShapeBase
+public class Circle : Shape
 {
     public Circle(double radius)
     {

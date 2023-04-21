@@ -2,7 +2,7 @@
 
 namespace Shapes.Shapes;
 
-public class Triangle : ShapeBase
+public class Triangle : Shape
 {
     public Triangle(double sideA, double sideB, double sideC)
     {

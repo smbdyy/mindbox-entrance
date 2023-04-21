@@ -2,7 +2,7 @@
 
 namespace Shapes.Shapes;
 
-public abstract class ShapeBase
+public abstract class Shape
 {
     public const double ComparisonTolerance = 0.0001;
     public abstract double CalculateArea();
